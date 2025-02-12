@@ -2,10 +2,10 @@
 	"schemaVersion": 1,
 	"id": "bettercarrotsreplanted",
 	"version": "${version}",
-	"name": "bettercarrotsreplanted",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Better Carrots: Replanted",
+	"description": "More Carrots! More Nuggets! Rats! and fuckable Riley Dolls!",
 	"authors": [
-		"Me!"
+		"FreeSmelly"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -17,6 +17,9 @@
 	"entrypoints": {
 		"main": [
 			"com.bettercarrots.Bettercarrotsreplanted"
+		],
+		"client": [
+			"com.bettercarrots.BettercarrotsreplantedClient"
 		],
 		"fabric-datagen": [
 			"com.bettercarrots.BettercarrotsreplantedDataGenerator"
