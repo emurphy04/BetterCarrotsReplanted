@@ -1,5 +1,6 @@
 package com.bettercarrots;
 
+import com.bettercarrots.item.ModItemGroups;
 import com.bettercarrots.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -15,5 +16,6 @@ public class Bettercarrotsreplanted implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 
 		ModItems.registerModItems();
+		ModItemGroups.registerItemGroups();
 	}
 }
