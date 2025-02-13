@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "bettercarrotsreplanted:rilynium_shard"
+    },
+    "Y": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "XYX",
+    "XXX"
+  ],
+  "result": {
+    "item": "bettercarrotsreplanted:rilynium_gem"
+  },
+  "show_notification": true
+}

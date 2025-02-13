@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "bettercarrotsreplanted:diamond_nugget"
+    },
+    "Y": {
+      "item": "minecraft:carrot"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "XYX",
+    "XXX"
+  ],
+  "result": {
+    "item": "bettercarrotsreplanted:diamond_carrot"
+  },
+  "show_notification": true
+}
