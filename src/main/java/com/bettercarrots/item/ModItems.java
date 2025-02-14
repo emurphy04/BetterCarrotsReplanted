@@ -1,6 +1,7 @@
 package com.bettercarrots.item;
 
 import com.bettercarrots.Bettercarrotsreplanted;
+import com.bettercarrots.item.custom.RilyniumArmorItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -41,10 +42,14 @@ public class ModItems {
     public static final Item RILYNIUM_GEM = registerItem("rilynium_gem", new Item(new FabricItemSettings()));
 
     //rilynium armor
-    public static final Item RILYNIUM_HELMET = registerItem("rilynium_helmet", new ArmorItem(ModArmorMaterials.RILYNIUM, ArmorItem.Type.HELMET, new FabricItemSettings()));
-    public static final Item RILYNIUM_CHESTPLATE = registerItem("rilynium_chestplate", new ArmorItem(ModArmorMaterials.RILYNIUM, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
-    public static final Item RILYNIUM_LEGGINGS = registerItem("rilynium_leggings", new ArmorItem(ModArmorMaterials.RILYNIUM, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
-    public static final Item RILYNIUM_BOOTS = registerItem("rilynium_boots", new ArmorItem(ModArmorMaterials.RILYNIUM, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+    public static final Item RILYNIUM_HELMET = registerItem("rilynium_helmet",
+            new RilyniumArmorItem(ModArmorMaterials.RILYNIUM, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item RILYNIUM_CHESTPLATE = registerItem("rilynium_chestplate",
+            new RilyniumArmorItem(ModArmorMaterials.RILYNIUM, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item RILYNIUM_LEGGINGS = registerItem("rilynium_leggings",
+            new RilyniumArmorItem(ModArmorMaterials.RILYNIUM, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item RILYNIUM_BOOTS = registerItem("rilynium_boots",
+            new RilyniumArmorItem(ModArmorMaterials.RILYNIUM, ArmorItem.Type.BOOTS, new FabricItemSettings()));
     //rilynium tools
 
     //emerald
