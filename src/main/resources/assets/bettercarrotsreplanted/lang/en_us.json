@@ -1,5 +1,19 @@
 {
   "itemgroup.bettercarrotsreplanted": "Better Carrots: Replanted",
 
-  "item.bettercarrotsreplanted.test": "Test Item"
+  "item.bettercarrotsreplanted.test": "Test Item",
+  "item.bettercarrotsreplanted.diamond_carrot": "Diamond Carrot",
+  "item.bettercarrotsreplanted.diamond_nugget": "Diamond Nugget",
+  "item.bettercarrotsreplanted.emerald_carrot": "Emerald Carrot",
+  "item.bettercarrotsreplanted.emerald_nugget": "Emerald Nugget",
+  "item.bettercarrotsreplanted.emerald_helmet": "Emerald Helmet",
+  "item.bettercarrotsreplanted.emerald_chestplate": "Emerald Chestplate",
+  "item.bettercarrotsreplanted.emerald_leggings": "Emerald Leggings",
+  "item.bettercarrotsreplanted.emerald_boots": "Emerald Boots",
+  "item.bettercarrotsreplanted.rilynium_helmet": "Rilynium Helmet",
+  "item.bettercarrotsreplanted.rilynium_chestplate": "Rilynium Chestplate",
+  "item.bettercarrotsreplanted.rilynium_leggings": "Rilynium Leggings",
+  "item.bettercarrotsreplanted.rilynium_boots": "Rilynium Boots",
+  "item.bettercarrotsreplanted.rilynium_carrot": "Rilynium Carrot",
+  "item.bettercarrotsreplanted.rilynium_shard": "Rilynium Shard"
 }
