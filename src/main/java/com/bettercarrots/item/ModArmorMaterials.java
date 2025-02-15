@@ -4,6 +4,7 @@ import com.bettercarrots.Bettercarrotsreplanted;
 import net.minecraft.client.sound.Sound;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
@@ -11,7 +12,8 @@ import net.minecraft.sound.SoundEvents;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    RILYNIUM("rilynium", 50, new int[] {9, 14, 12, 9}, 19, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3f, 0.1f, () -> Ingredient.ofItems(ModItems.RILYNIUM_GEM));
+    RILYNIUM("rilynium", 50, new int[] {9, 14, 12, 9}, 19, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3f, 0.1f, () -> Ingredient.ofItems(ModItems.RILYNIUM_GEM)),
+    EMERALD("emerald", 35, new int[] {3, 8, 6, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.5f, 0.0f, () -> Ingredient.ofItems(Items.EMERALD));
 
     private final String name;
     private final int durabilityMultiplier;

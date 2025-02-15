@@ -15,24 +15,40 @@ public class ModItemGroups {
         entries.add(ModItems.TEST);
         //Diamond
         entries.add(ModItems.DIAMOND_CARROT);
+        entries.add(ModItems.DIAMOND_NUGGET);
 
         //Iron
         entries.add(ModItems.IRON_CARROT);
 
         //Lapis
         entries.add(ModItems.LAPIS_CARROT);
+        entries.add(ModItems.LAPIS_NUGGET);
 
         //Redstone
         entries.add(ModItems.REDSTONE_CARROT);
+        entries.add(ModItems.REDSTONE_NUGGET);
 
         //Emerald
         entries.add(ModItems.EMERALD_CARROT);
+        entries.add(ModItems.EMERALD_NUGGET);
+        entries.add(ModItems.EMERALD_HELMET);
+        entries.add(ModItems.EMERALD_CHESTPLATE);
+        entries.add(ModItems.EMERALD_LEGGINGS);
+        entries.add(ModItems.EMERALD_BOOTS);
 
         //Netherite
         entries.add(ModItems.NETHERITE_CARROT);
+        entries.add(ModItems.NETHERITE_NUGGET);
 
         //Rilynium
         entries.add(ModItems.RILYNIUM_CARROT);
+        entries.add(ModItems.RILYNIUM_SHARD);
+        entries.add(ModItems.RILYNIUM_GEM);
+        entries.add(ModItems.RILYNIUM_UPGRADE_SMITHING_TEMPLATE);
+        entries.add(ModItems.RILYNIUM_HELMET);
+        entries.add(ModItems.RILYNIUM_CHESTPLATE);
+        entries.add(ModItems.RILYNIUM_LEGGINGS);
+        entries.add(ModItems.RILYNIUM_BOOTS);
 
     }).build());
 

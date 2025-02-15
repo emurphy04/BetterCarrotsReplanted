@@ -31,12 +31,20 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.EMERALD_NUGGET, Models.GENERATED);
         itemModelGenerator.register(ModItems.LAPIS_NUGGET, Models.GENERATED);
         itemModelGenerator.register(ModItems.REDSTONE_NUGGET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NETHERITE_NUGGET, Models.GENERATED);
         itemModelGenerator.register(ModItems.RILYNIUM_SHARD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RILYNIUM_CARROT, Models.GENERATED);
         itemModelGenerator.register(ModItems.RILYNIUM_GEM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RILYNIUM_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
 
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.RILYNIUM_HELMET));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.RILYNIUM_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.RILYNIUM_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.RILYNIUM_BOOTS));
+
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.EMERALD_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.EMERALD_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.EMERALD_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.EMERALD_BOOTS));
     }
 }
