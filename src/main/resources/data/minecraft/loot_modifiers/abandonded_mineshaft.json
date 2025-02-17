@@ -1,0 +1,15 @@
+{
+  "type": "fabric:loot_table",
+  "conditions": [],
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "bettercarrotsreplanted:loot_tables/chests/abandoned_mineshaft_addition"
+        }
+      ]
+    }
+  ]
+}

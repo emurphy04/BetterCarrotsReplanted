@@ -12,6 +12,10 @@ import net.minecraft.sound.SoundEvents;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
+    ELECTRIC_RILYNIUM("electric_rilynium", 55, new int[] {10, 15, 13, 10}, 20, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 5f, 0.2f, () -> Ingredient.ofItems(ModItems.RILYNIUM_GEM)),
+    FIRE_RILYNIUM("fire_rilynium", 55, new int[] {10, 15, 13, 10}, 20, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 5f, 0.2f, () -> Ingredient.ofItems(ModItems.RILYNIUM_GEM)),
+    WATER_RILYNIUM("water_rilynium", 55, new int[] {10, 15, 13, 10}, 20, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 5f, 0.2f, () -> Ingredient.ofItems(ModItems.RILYNIUM_GEM)),
+    WIND_RILYNIUM("wind_rilynium", 55, new int[] {10, 15, 13, 10}, 20, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 5f, 0.2f, () -> Ingredient.ofItems(ModItems.RILYNIUM_GEM)),
     RILYNIUM("rilynium", 50, new int[] {9, 14, 12, 9}, 19, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3f, 0.1f, () -> Ingredient.ofItems(ModItems.RILYNIUM_GEM)),
     EMERALD("emerald", 35, new int[] {3, 8, 6, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.5f, 0.0f, () -> Ingredient.ofItems(Items.EMERALD));
 

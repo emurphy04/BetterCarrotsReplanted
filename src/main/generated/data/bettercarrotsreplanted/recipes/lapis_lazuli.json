@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "bettercarrotsreplanted:lapis_nugget"
+    },
+    {
+      "item": "bettercarrotsreplanted:lapis_nugget"
+    },
+    {
+      "item": "bettercarrotsreplanted:lapis_nugget"
+    },
+    {
+      "item": "bettercarrotsreplanted:lapis_nugget"
+    },
+    {
+      "item": "bettercarrotsreplanted:lapis_nugget"
+    },
+    {
+      "item": "bettercarrotsreplanted:lapis_nugget"
+    },
+    {
+      "item": "bettercarrotsreplanted:lapis_nugget"
+    },
+    {
+      "item": "bettercarrotsreplanted:lapis_nugget"
+    },
+    {
+      "item": "bettercarrotsreplanted:lapis_nugget"
+    }
+  ],
+  "result": {
+    "item": "minecraft:lapis_lazuli"
+  }
+}

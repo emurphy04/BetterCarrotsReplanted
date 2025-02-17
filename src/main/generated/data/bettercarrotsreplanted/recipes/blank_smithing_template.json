@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "bettercarrotsreplanted:netherite_nugget"
+    },
+    "Y": {
+      "item": "minecraft:polished_diorite"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "XYX",
+    "XXX"
+  ],
+  "result": {
+    "item": "bettercarrotsreplanted:blank_smithing_template"
+  },
+  "show_notification": true
+}

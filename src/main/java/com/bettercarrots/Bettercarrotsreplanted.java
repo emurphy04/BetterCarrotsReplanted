@@ -1,7 +1,10 @@
 package com.bettercarrots;
 
+import com.bettercarrots.datagen.ModWorldGenerator;
+import com.bettercarrots.item.ModBlocks;
 import com.bettercarrots.item.ModItemGroups;
 import com.bettercarrots.item.ModItems;
+import com.bettercarrots.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -16,6 +19,8 @@ public class Bettercarrotsreplanted implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 		ModItemGroups.registerItemGroups();
+		ModWorldGeneration.generateModWorldGen();
 	}
 }
