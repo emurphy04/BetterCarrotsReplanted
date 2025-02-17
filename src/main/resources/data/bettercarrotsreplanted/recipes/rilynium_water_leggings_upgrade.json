@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "bettercarrotsreplanted:rilynium_leggings"
+  },
+  "addition": {
+    "item": "minecraft:sponge"
+  },
+  "template": {
+    "item": "bettercarrotsreplanted:blank_smithing_template"
+  },
+  "result": {
+    "item": "bettercarrotsreplanted:rilynium_water_leggings"
+  }
+}
+
