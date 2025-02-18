@@ -3,6 +3,7 @@ package com.bettercarrots.item;
 import com.bettercarrots.Bettercarrotsreplanted;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -25,6 +26,51 @@ public class ModArmorMaterials {
                 map.put(ArmorItem.Type.BODY, 4);
             }), 20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, () -> Ingredient.ofItems(ModItems.RILYNIUM_GEM),
                     List.of(new ArmorMaterial.Layer(Identifier.of(Bettercarrotsreplanted.MOD_ID, "rilynium"))), 0,0));
+    public static final RegistryEntry<ArmorMaterial> FIRE_RILYNIUM = registerArmorMaterial("fire_rilynium",
+            () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                map.put(ArmorItem.Type.BOOTS, 2);
+                map.put(ArmorItem.Type.LEGGINGS, 4);
+                map.put(ArmorItem.Type.CHESTPLATE, 6);
+                map.put(ArmorItem.Type.HELMET, 2);
+                map.put(ArmorItem.Type.BODY, 4);
+            }), 20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, () -> Ingredient.ofItems(ModItems.RILYNIUM_GEM),
+                    List.of(new ArmorMaterial.Layer(Identifier.of(Bettercarrotsreplanted.MOD_ID, "fire_rilynium"))), 0,0));
+    public static final RegistryEntry<ArmorMaterial> WATER_RILYNIUM = registerArmorMaterial("water_rilynium",
+            () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                map.put(ArmorItem.Type.BOOTS, 2);
+                map.put(ArmorItem.Type.LEGGINGS, 4);
+                map.put(ArmorItem.Type.CHESTPLATE, 6);
+                map.put(ArmorItem.Type.HELMET, 2);
+                map.put(ArmorItem.Type.BODY, 4);
+            }), 20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, () -> Ingredient.ofItems(ModItems.RILYNIUM_GEM),
+                    List.of(new ArmorMaterial.Layer(Identifier.of(Bettercarrotsreplanted.MOD_ID, "water_rilynium"))), 0,0));
+    public static final RegistryEntry<ArmorMaterial> WIND_RILYNIUM = registerArmorMaterial("wind_rilynium",
+            () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                map.put(ArmorItem.Type.BOOTS, 2);
+                map.put(ArmorItem.Type.LEGGINGS, 4);
+                map.put(ArmorItem.Type.CHESTPLATE, 6);
+                map.put(ArmorItem.Type.HELMET, 2);
+                map.put(ArmorItem.Type.BODY, 4);
+            }), 20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, () -> Ingredient.ofItems(ModItems.RILYNIUM_GEM),
+                    List.of(new ArmorMaterial.Layer(Identifier.of(Bettercarrotsreplanted.MOD_ID, "wind_rilynium"))), 0,0));
+    public static final RegistryEntry<ArmorMaterial> ELECTRIC_RILYNIUM = registerArmorMaterial("electric_rilynium",
+            () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                map.put(ArmorItem.Type.BOOTS, 2);
+                map.put(ArmorItem.Type.LEGGINGS, 4);
+                map.put(ArmorItem.Type.CHESTPLATE, 6);
+                map.put(ArmorItem.Type.HELMET, 2);
+                map.put(ArmorItem.Type.BODY, 4);
+            }), 20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, () -> Ingredient.ofItems(ModItems.RILYNIUM_GEM),
+                    List.of(new ArmorMaterial.Layer(Identifier.of(Bettercarrotsreplanted.MOD_ID, "electric_rilynium"))), 0,0));
+    public static final RegistryEntry<ArmorMaterial> EMERALD = registerArmorMaterial("emerald",
+            () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                map.put(ArmorItem.Type.BOOTS, 2);
+                map.put(ArmorItem.Type.LEGGINGS, 4);
+                map.put(ArmorItem.Type.CHESTPLATE, 6);
+                map.put(ArmorItem.Type.HELMET, 2);
+                map.put(ArmorItem.Type.BODY, 4);
+            }), 20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, () -> Ingredient.ofItems(Items.EMERALD),
+                    List.of(new ArmorMaterial.Layer(Identifier.of(Bettercarrotsreplanted.MOD_ID, "emerald"))), 0,0));
 
 
     public static RegistryEntry<ArmorMaterial> registerArmorMaterial(String name, Supplier<ArmorMaterial> material) {
