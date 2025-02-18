@@ -16,13 +16,13 @@ import java.util.List;
 
 public class ModPlacedFeatures {
 
-    public static final RegistryKey<PlacedFeature> RILYNIUM_ORE_PLACED_KEY = registerKey("rilynium_ore_placed");
+    public static final RegistryKey<PlacedFeature> END_RILYNIUM_ORE_PLACED_KEY = registerKey("end_rilynium_ore_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
-        register(context, RILYNIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.RILYNIUM_ORE_KEY),
+        register(context, END_RILYNIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.END_RILYNIUM_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(2,
-                        HeightRangePlacementModifier.uniform(YOffset.fixed(-40), YOffset.fixed(-10))));
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name){

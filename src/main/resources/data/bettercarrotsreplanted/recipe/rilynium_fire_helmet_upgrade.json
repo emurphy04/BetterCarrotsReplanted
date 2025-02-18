@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing_transform",
   "base": {
-    "item": "bettercarrotsreplanted:rilynium_chestplate"
+    "item": "bettercarrotsreplanted:rilynium_helmet"
   },
   "addition": {
     "item": "minecraft:blaze_rod"
@@ -10,7 +10,6 @@
     "item": "bettercarrotsreplanted:blank_smithing_template"
   },
   "result": {
-    "item": "bettercarrotsreplanted:rilynium_fire_chestplate"
+    "id": "bettercarrotsreplanted:rilynium_fire_helmet"
   }
 }
-

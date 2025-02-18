@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing_transform",
   "base": {
-    "item": "bettercarrotsreplanted:rilynium_leggings"
+    "item": "bettercarrotsreplanted:rilynium_boots"
   },
   "addition": {
     "item": "minecraft:lightning_rod"
@@ -10,7 +10,6 @@
     "item": "bettercarrotsreplanted:blank_smithing_template"
   },
   "result": {
-    "item": "bettercarrotsreplanted:rilynium_electric_leggings"
+    "id": "bettercarrotsreplanted:rilynium_electric_boots"
   }
 }
-

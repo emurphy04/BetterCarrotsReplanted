@@ -161,6 +161,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                     .criterion(hasItem(ModItems.NETHERITE_NUGGET), conditionsFromItem(ModItems.NETHERITE_NUGGET))
                     .offerTo(consumer, Identifier.of(Bettercarrotsreplanted.MOD_ID, "blank_smithing_template"));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RILYNIUM_UPGRADE_SMITHING_TEMPLATE, 1)
+                .pattern("XXX")
+                .pattern("XYX")
+                .pattern("XXX")
+                .input('X', ModItems.RILYNIUM_GEM)
+                .input('Y', ModItems.BLANK_SMITHING_TEMPLATE)
+                .criterion(hasItem(ModItems.RILYNIUM_UPGRADE_SMITHING_TEMPLATE), conditionsFromItem(ModItems.RILYNIUM_UPGRADE_SMITHING_TEMPLATE))
+                .offerTo(consumer, Identifier.of(Bettercarrotsreplanted.MOD_ID, "rilynium_upgrade_smithing_template_from_blank"));
+
             ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RILYNIUM_UPGRADE_SMITHING_TEMPLATE, 2)
                     .pattern("XXX")
                     .pattern("XYX")

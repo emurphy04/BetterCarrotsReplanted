@@ -4,13 +4,12 @@
     "item": "bettercarrotsreplanted:rilynium_helmet"
   },
   "addition": {
-    "item": "minecraft:blaze_rod"
+    "item": "minecraft:lightning_rod"
   },
   "template": {
     "item": "bettercarrotsreplanted:blank_smithing_template"
   },
   "result": {
-    "item": "bettercarrotsreplanted:rilynium_fire_helmet"
+    "id": "bettercarrotsreplanted:rilynium_electric_helmet"
   }
 }
-

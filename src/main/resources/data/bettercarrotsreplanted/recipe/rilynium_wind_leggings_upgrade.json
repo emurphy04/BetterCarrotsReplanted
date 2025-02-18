@@ -1,16 +1,15 @@
 {
   "type": "minecraft:smithing_transform",
   "base": {
-    "item": "bettercarrotsreplanted:rilynium_helmet"
+    "item": "bettercarrotsreplanted:rilynium_leggings"
   },
   "addition": {
-    "item": "minecraft:lightning_rod"
+    "item": "minecraft:wind_charge"
   },
   "template": {
     "item": "bettercarrotsreplanted:blank_smithing_template"
   },
   "result": {
-    "item": "bettercarrotsreplanted:rilynium_electric_helmet"
+    "id": "bettercarrotsreplanted:rilynium_wind_leggings"
   }
 }
-

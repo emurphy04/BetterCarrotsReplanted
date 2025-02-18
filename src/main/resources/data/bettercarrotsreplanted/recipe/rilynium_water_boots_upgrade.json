@@ -1,16 +1,15 @@
 {
   "type": "minecraft:smithing_transform",
   "base": {
-    "item": "bettercarrotsreplanted:rilynium_helmet"
+    "item": "bettercarrotsreplanted:rilynium_boots"
   },
   "addition": {
-    "item": "minecraft:string"
+    "item": "minecraft:sponge"
   },
   "template": {
     "item": "bettercarrotsreplanted:blank_smithing_template"
   },
   "result": {
-    "item": "bettercarrotsreplanted:rilynium_wind_helmet"
+    "id": "bettercarrotsreplanted:rilynium_water_boots"
   }
 }
-

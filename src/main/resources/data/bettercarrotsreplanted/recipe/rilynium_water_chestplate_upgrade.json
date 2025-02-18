@@ -1,16 +1,15 @@
 {
   "type": "minecraft:smithing_transform",
   "base": {
-    "item": "bettercarrotsreplanted:rilynium_leggings"
+    "item": "bettercarrotsreplanted:rilynium_chestplate"
   },
   "addition": {
-    "item": "minecraft:blaze_rod"
+    "item": "minecraft:sponge"
   },
   "template": {
     "item": "bettercarrotsreplanted:blank_smithing_template"
   },
   "result": {
-    "item": "bettercarrotsreplanted:rilynium_fire_leggings"
+    "id": "bettercarrotsreplanted:rilynium_water_chestplate"
   }
 }
-

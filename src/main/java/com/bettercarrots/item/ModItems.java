@@ -46,13 +46,13 @@ public class ModItems {
     //base
 
     public static final Item RILYNIUM_HELMET = registerItem("rilynium_helmet",
-            new RilyniumArmorItem(ModArmorMaterials.RILYNIUM, ArmorItem.Type.HELMET, new Item.Settings()));
+            new RilyniumArmorItem(ModArmorMaterials.RILYNIUM, ArmorItem.Type.HELMET, new Item.Settings().maxCount(1)));
     public static final Item RILYNIUM_CHESTPLATE = registerItem("rilynium_chestplate",
-            new RilyniumArmorItem(ModArmorMaterials.RILYNIUM, ArmorItem.Type.CHESTPLATE, new Item.Settings()));
+            new RilyniumArmorItem(ModArmorMaterials.RILYNIUM, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxCount(1)));
     public static final Item RILYNIUM_LEGGINGS = registerItem("rilynium_leggings",
-            new RilyniumArmorItem(ModArmorMaterials.RILYNIUM, ArmorItem.Type.LEGGINGS, new Item.Settings()));
+            new RilyniumArmorItem(ModArmorMaterials.RILYNIUM, ArmorItem.Type.LEGGINGS, new Item.Settings().maxCount(1)));
     public static final Item RILYNIUM_BOOTS = registerItem("rilynium_boots",
-            new RilyniumArmorItem(ModArmorMaterials.RILYNIUM, ArmorItem.Type.BOOTS, new Item.Settings()));
+            new RilyniumArmorItem(ModArmorMaterials.RILYNIUM, ArmorItem.Type.BOOTS, new Item.Settings().maxCount(1)));
     public static final Item RILYNIUM_UPGRADE_SMITHING_TEMPLATE = registerItem("rilynium_upgrade_smithing_template",
             new SmithingTemplateItem(
                     Text.translatable("item.bettercarrotsreplanted.rilynium_upgrade_smithing_template.applies_to"), // Tooltip text
@@ -79,50 +79,50 @@ public class ModItems {
     //fire
 
     public static final Item RILYNIUM_FIRE_HELMET = registerItem("rilynium_fire_helmet",
-            new RilyniumFireArmorItem(ModArmorMaterials.FIRE_RILYNIUM, ArmorItem.Type.HELMET, new Item.Settings()));
+            new RilyniumFireArmorItem(ModArmorMaterials.FIRE_RILYNIUM, ArmorItem.Type.HELMET, new Item.Settings().maxCount(1)));
     public static final Item RILYNIUM_FIRE_CHESTPLATE = registerItem("rilynium_fire_chestplate",
-            new RilyniumFireArmorItem(ModArmorMaterials.FIRE_RILYNIUM, ArmorItem.Type.CHESTPLATE, new Item.Settings()));
+            new RilyniumFireArmorItem(ModArmorMaterials.FIRE_RILYNIUM, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxCount(1)));
     public static final Item RILYNIUM_FIRE_LEGGINGS = registerItem("rilynium_fire_leggings",
-            new RilyniumFireArmorItem(ModArmorMaterials.FIRE_RILYNIUM, ArmorItem.Type.LEGGINGS, new Item.Settings()));
+            new RilyniumFireArmorItem(ModArmorMaterials.FIRE_RILYNIUM, ArmorItem.Type.LEGGINGS, new Item.Settings().maxCount(1)));
     public static final Item RILYNIUM_FIRE_BOOTS = registerItem("rilynium_fire_boots",
-            new RilyniumFireArmorItem(ModArmorMaterials.FIRE_RILYNIUM, ArmorItem.Type.BOOTS, new Item.Settings()));
+            new RilyniumFireArmorItem(ModArmorMaterials.FIRE_RILYNIUM, ArmorItem.Type.BOOTS, new Item.Settings().maxCount(1)));
     //wind
     public static final Item RILYNIUM_WIND_HELMET = registerItem("rilynium_wind_helmet",
-            new RilyniumWindArmorItem(ModArmorMaterials.WIND_RILYNIUM, ArmorItem.Type.HELMET, new Item.Settings()));
+            new RilyniumWindArmorItem(ModArmorMaterials.WIND_RILYNIUM, ArmorItem.Type.HELMET, new Item.Settings().maxCount(1)));
     public static final Item RILYNIUM_WIND_CHESTPLATE = registerItem("rilynium_wind_chestplate",
-            new RilyniumWindArmorItem(ModArmorMaterials.WIND_RILYNIUM, ArmorItem.Type.CHESTPLATE, new Item.Settings()));
+            new RilyniumWindArmorItem(ModArmorMaterials.WIND_RILYNIUM, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxCount(1)));
     public static final Item RILYNIUM_WIND_LEGGINGS = registerItem("rilynium_wind_leggings",
-            new RilyniumWindArmorItem(ModArmorMaterials.WIND_RILYNIUM, ArmorItem.Type.LEGGINGS, new Item.Settings()));
+            new RilyniumWindArmorItem(ModArmorMaterials.WIND_RILYNIUM, ArmorItem.Type.LEGGINGS, new Item.Settings().maxCount(1)));
     public static final Item RILYNIUM_WIND_BOOTS = registerItem("rilynium_wind_boots",
-            new RilyniumWindArmorItem(ModArmorMaterials.WIND_RILYNIUM, ArmorItem.Type.BOOTS, new Item.Settings()));
+            new RilyniumWindArmorItem(ModArmorMaterials.WIND_RILYNIUM, ArmorItem.Type.BOOTS, new Item.Settings().maxCount(1)));
     //water
     public static final Item RILYNIUM_WATER_HELMET = registerItem("rilynium_water_helmet",
-            new RilyniumWaterArmorItem(ModArmorMaterials.WATER_RILYNIUM, ArmorItem.Type.HELMET, new Item.Settings()));
+            new RilyniumWaterArmorItem(ModArmorMaterials.WATER_RILYNIUM, ArmorItem.Type.HELMET, new Item.Settings().maxCount(1)));
     public static final Item RILYNIUM_WATER_CHESTPLATE = registerItem("rilynium_water_chestplate",
-            new RilyniumWaterArmorItem(ModArmorMaterials.WATER_RILYNIUM, ArmorItem.Type.CHESTPLATE, new Item.Settings()));
+            new RilyniumWaterArmorItem(ModArmorMaterials.WATER_RILYNIUM, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxCount(1)));
     public static final Item RILYNIUM_WATER_LEGGINGS = registerItem("rilynium_water_leggings",
-            new RilyniumWaterArmorItem(ModArmorMaterials.WATER_RILYNIUM, ArmorItem.Type.LEGGINGS, new Item.Settings()));
+            new RilyniumWaterArmorItem(ModArmorMaterials.WATER_RILYNIUM, ArmorItem.Type.LEGGINGS, new Item.Settings().maxCount(1)));
     public static final Item RILYNIUM_WATER_BOOTS = registerItem("rilynium_water_boots",
-            new RilyniumWaterArmorItem(ModArmorMaterials.WATER_RILYNIUM, ArmorItem.Type.BOOTS, new Item.Settings()));
+            new RilyniumWaterArmorItem(ModArmorMaterials.WATER_RILYNIUM, ArmorItem.Type.BOOTS, new Item.Settings().maxCount(1)));
     //electric
     public static final Item RILYNIUM_ELECTRIC_HELMET = registerItem("rilynium_electric_helmet",
-            new RilyniumElectricArmorItem(ModArmorMaterials.ELECTRIC_RILYNIUM, ArmorItem.Type.HELMET, new Item.Settings()));
+            new RilyniumElectricArmorItem(ModArmorMaterials.ELECTRIC_RILYNIUM, ArmorItem.Type.HELMET, new Item.Settings().maxCount(1)));
     public static final Item RILYNIUM_ELECTRIC_CHESTPLATE = registerItem("rilynium_electric_chestplate",
-            new RilyniumElectricArmorItem(ModArmorMaterials.ELECTRIC_RILYNIUM, ArmorItem.Type.CHESTPLATE, new Item.Settings()));
+            new RilyniumElectricArmorItem(ModArmorMaterials.ELECTRIC_RILYNIUM, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxCount(1)));
     public static final Item RILYNIUM_ELECTRIC_LEGGINGS = registerItem("rilynium_electric_leggings",
-            new RilyniumElectricArmorItem(ModArmorMaterials.ELECTRIC_RILYNIUM, ArmorItem.Type.LEGGINGS, new Item.Settings()));
+            new RilyniumElectricArmorItem(ModArmorMaterials.ELECTRIC_RILYNIUM, ArmorItem.Type.LEGGINGS, new Item.Settings().maxCount(1)));
     public static final Item RILYNIUM_ELECTRIC_BOOTS = registerItem("rilynium_electric_boots",
-            new RilyniumElectricArmorItem(ModArmorMaterials.ELECTRIC_RILYNIUM, ArmorItem.Type.BOOTS, new Item.Settings()));
+            new RilyniumElectricArmorItem(ModArmorMaterials.ELECTRIC_RILYNIUM, ArmorItem.Type.BOOTS, new Item.Settings().maxCount(1)));
 
     //rilynium tools
 
     //emerald
     public static final Item EMERALD_CARROT = registerItem("emerald_carrot", new Item(new Item.Settings().food(ModFoodComponents.EMERALD_CARROT)));
     public static final Item EMERALD_NUGGET = registerItem("emerald_nugget", new Item(new Item.Settings()));
-    public static final Item EMERALD_HELMET = registerItem("emerald_helmet", new ArmorItem(ModArmorMaterials.EMERALD, ArmorItem.Type.HELMET,new Item.Settings()));
-    public static final Item EMERALD_CHESTPLATE = registerItem("emerald_chestplate", new ArmorItem(ModArmorMaterials.EMERALD, ArmorItem.Type.CHESTPLATE,new Item.Settings()));
-    public static final Item EMERALD_LEGGINGS = registerItem("emerald_leggings", new ArmorItem(ModArmorMaterials.EMERALD, ArmorItem.Type.LEGGINGS,new Item.Settings()));
-    public static final Item EMERALD_BOOTS = registerItem("emerald_boots", new ArmorItem(ModArmorMaterials.EMERALD, ArmorItem.Type.BOOTS,new Item.Settings()));
+    public static final Item EMERALD_HELMET = registerItem("emerald_helmet", new ArmorItem(ModArmorMaterials.EMERALD, ArmorItem.Type.HELMET,new Item.Settings().maxCount(1)));
+    public static final Item EMERALD_CHESTPLATE = registerItem("emerald_chestplate", new ArmorItem(ModArmorMaterials.EMERALD, ArmorItem.Type.CHESTPLATE,new Item.Settings().maxCount(1)));
+    public static final Item EMERALD_LEGGINGS = registerItem("emerald_leggings", new ArmorItem(ModArmorMaterials.EMERALD, ArmorItem.Type.LEGGINGS,new Item.Settings().maxCount(1)));
+    public static final Item EMERALD_BOOTS = registerItem("emerald_boots", new ArmorItem(ModArmorMaterials.EMERALD, ArmorItem.Type.BOOTS,new Item.Settings().maxCount(1)));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(Bettercarrotsreplanted.MOD_ID, name), item);

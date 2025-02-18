@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing_transform",
   "base": {
-    "item": "minecraft:netherite_boots"
+    "item": "minecraft:netherite_chestplate"
   },
   "addition": {
     "item": "bettercarrotsreplanted:rilynium_gem"
@@ -10,7 +10,6 @@
     "item": "bettercarrotsreplanted:rilynium_upgrade_smithing_template"
   },
   "result": {
-    "item": "bettercarrotsreplanted:rilynium_boots"
+    "id": "bettercarrotsreplanted:rilynium_chestplate"
   }
 }
-

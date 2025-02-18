@@ -4,13 +4,12 @@
     "item": "bettercarrotsreplanted:rilynium_chestplate"
   },
   "addition": {
-    "item": "minecraft:sponge"
+    "item": "minecraft:blaze_rod"
   },
   "template": {
     "item": "bettercarrotsreplanted:blank_smithing_template"
   },
   "result": {
-    "item": "bettercarrotsreplanted:rilynium_water_chestplate"
+    "id": "bettercarrotsreplanted:rilynium_fire_chestplate"
   }
 }
-
