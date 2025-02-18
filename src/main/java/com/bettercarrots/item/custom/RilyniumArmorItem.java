@@ -65,6 +65,12 @@ public class RilyniumArmorItem extends ArmorItem implements GeoItem {
         return !helmet.isEmpty() && !chestplate.isEmpty() && !leggings.isEmpty() && !boots.isEmpty();
     }
 
+    @Override
+    public boolean isEnchantable(ItemStack stack) {
+        return true;
+    }
+
+
     public void createRenderer(Consumer<GeoRenderProvider> consumer) {
         consumer.accept(new GeoRenderProvider() {
             private GeoArmorRenderer renderer;
@@ -78,6 +84,7 @@ public class RilyniumArmorItem extends ArmorItem implements GeoItem {
             }
         });
     }
+
 
 
     private PlayState predicate(AnimationState animationState){

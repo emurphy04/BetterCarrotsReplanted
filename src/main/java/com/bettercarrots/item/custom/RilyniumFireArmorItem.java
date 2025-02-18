@@ -1,15 +1,20 @@
 package com.bettercarrots.item.custom;
 
+import com.bettercarrots.item.ModArmorMaterials;
 import com.bettercarrots.item.client.RilyniumArmorRenderer;
+import com.google.common.collect.ImmutableMap;
 import net.minecraft.client.render.entity.model.BipedEntityModel;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.world.World;
 import software.bernie.geckolib.animatable.GeoAnimatable;
 import software.bernie.geckolib.animatable.GeoItem;
 import software.bernie.geckolib.animatable.client.GeoRenderProvider;
@@ -18,6 +23,8 @@ import software.bernie.geckolib.animatable.instance.SingletonAnimatableInstanceC
 import software.bernie.geckolib.animation.*;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
 
+import java.util.List;
+import java.util.Map;
 import java.util.function.Consumer;
 
 public class RilyniumFireArmorItem extends ArmorItem implements GeoItem {
@@ -26,17 +33,49 @@ public class RilyniumFireArmorItem extends ArmorItem implements GeoItem {
 
     public RilyniumFireArmorItem(RegistryEntry<ArmorMaterial> material, Type type, Settings settings){super(material, type, settings);}
 
-    private void addStatusEffectForMaterial(PlayerEntity player, ArmorMaterial mapArmorMaterial, StatusEffectInstance mapStatusEffect) {
-        boolean hasPlayerEffect = player.hasStatusEffect(mapStatusEffect.getEffectType());
+    private static final Map<RegistryEntry<ArmorMaterial>, List<StatusEffectInstance>> MATERIAL_TO_EFFECT_MAP =
+            (new ImmutableMap.Builder<RegistryEntry<ArmorMaterial>, List<StatusEffectInstance>>())
+                    .put(ModArmorMaterials.ELECTRIC_RILYNIUM,
+                            List.of(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 400, 2, false, false),
+                                    new StatusEffectInstance(StatusEffects.ABSORPTION, 400, 1, false, false),
+                                    new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 400, 2, false, false)
+                            )).build();
 
-        if(hasCorrectArmorOn(mapArmorMaterial, player) && !hasPlayerEffect) {
-            player.addStatusEffect(new StatusEffectInstance(mapStatusEffect));
+    @Override
+    public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
+        if(!world.isClient()){
+            if(entity instanceof PlayerEntity player) {
+                if(hasFullSuitArmorOn(player)){
+                    evaluateArmorEffects(player);
+                }
+            }
+        }
+        super.inventoryTick(stack, world, entity, slot, selected);
+    }
+
+    private boolean hasFullSuitArmorOn(PlayerEntity player) {
+        ItemStack boots = player.getInventory().getArmorStack(0);
+        ItemStack leggings = player.getInventory().getArmorStack(1);
+        ItemStack chestplate = player.getInventory().getArmorStack(2);
+        ItemStack helmet = player.getInventory().getArmorStack(3);
+
+        return !helmet.isEmpty() && !chestplate.isEmpty() && !leggings.isEmpty() && !boots.isEmpty();
+    }
+
+    private void evaluateArmorEffects(PlayerEntity player) {
+        for (Map.Entry<RegistryEntry<ArmorMaterial>, List<StatusEffectInstance>> entry : MATERIAL_TO_EFFECT_MAP.entrySet()){
+            RegistryEntry<ArmorMaterial> mapArmorMaterial = entry.getKey();
+            List<StatusEffectInstance> mapStatusEffect = entry.getValue();
+
+            if(hasCorrectArmorOn(mapArmorMaterial, player)){
+                addStatusEffectForMaterial(player, mapArmorMaterial, mapStatusEffect);
+            }
         }
     }
 
-    private boolean hasCorrectArmorOn(ArmorMaterial mapArmorMaterial, PlayerEntity player) {
-        for (ItemStack armorStack: player.getInventory().armor) {
-            if(!(armorStack.getItem() instanceof ArmorItem)) {
+    private boolean hasCorrectArmorOn(RegistryEntry<ArmorMaterial> mapArmorMaterial, PlayerEntity player) {
+        for (ItemStack armorStack: player.getInventory().armor){
+            if (!(armorStack.getItem() instanceof ArmorItem)) {
                 return false;
             }
         }
@@ -49,13 +88,15 @@ public class RilyniumFireArmorItem extends ArmorItem implements GeoItem {
         return helmet.getMaterial() == material && chestplate.getMaterial() == material && leggings.getMaterial() == material && boots.getMaterial() == material;
     }
 
-    private boolean hasFullSuitOfArmorOn(PlayerEntity player) {
-        ItemStack boots = player.getInventory().getArmorStack(0);
-        ItemStack leggings = player.getInventory().getArmorStack(1);
-        ItemStack chestplate = player.getInventory().getArmorStack(2);
-        ItemStack helmet = player.getInventory().getArmorStack(3);
+    private void addStatusEffectForMaterial(PlayerEntity player, RegistryEntry<ArmorMaterial> mapArmorMaterial, List<StatusEffectInstance> mapStatusEffect) {
+        boolean hasPlayerEffect = mapStatusEffect.stream().allMatch(statusEffectInstance -> player.hasStatusEffect(statusEffectInstance.getEffectType()));
 
-        return !helmet.isEmpty() && !chestplate.isEmpty() && !leggings.isEmpty() && !boots.isEmpty();
+        if (hasCorrectArmorOn(mapArmorMaterial, player) && !hasPlayerEffect){
+            for (StatusEffectInstance instance : mapStatusEffect) {
+                player.addStatusEffect(new StatusEffectInstance(instance.getEffectType(),
+                        instance.getDuration(), instance.getAmplifier(), instance.isAmbient(), instance.shouldShowParticles()));
+            }
+        }
     }
 
     public void createRenderer(Consumer<GeoRenderProvider> consumer) {
