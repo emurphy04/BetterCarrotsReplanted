@@ -1,83 +1,83 @@
 package com.bettercarrots.item;
 
 import com.bettercarrots.Bettercarrotsreplanted;
-import net.minecraft.client.sound.Sound;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.sound.SoundEvent;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.Util;
 
+import java.util.EnumMap;
+import java.util.List;
 import java.util.function.Supplier;
 
-public enum ModArmorMaterials implements ArmorMaterial {
-    ELECTRIC_RILYNIUM("electric_rilynium", 55, new int[] {10, 15, 13, 10}, 20, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 5f, 0.2f, () -> Ingredient.ofItems(ModItems.RILYNIUM_GEM)),
-    FIRE_RILYNIUM("fire_rilynium", 55, new int[] {10, 15, 13, 10}, 20, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 5f, 0.2f, () -> Ingredient.ofItems(ModItems.RILYNIUM_GEM)),
-    WATER_RILYNIUM("water_rilynium", 55, new int[] {10, 15, 13, 10}, 20, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 5f, 0.2f, () -> Ingredient.ofItems(ModItems.RILYNIUM_GEM)),
-    WIND_RILYNIUM("wind_rilynium", 55, new int[] {10, 15, 13, 10}, 20, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 5f, 0.2f, () -> Ingredient.ofItems(ModItems.RILYNIUM_GEM)),
-    RILYNIUM("rilynium", 50, new int[] {9, 14, 12, 9}, 19, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3f, 0.1f, () -> Ingredient.ofItems(ModItems.RILYNIUM_GEM)),
-    EMERALD("emerald", 35, new int[] {3, 8, 6, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.5f, 0.0f, () -> Ingredient.ofItems(Items.EMERALD));
+public class ModArmorMaterials {
+    public static final RegistryEntry<ArmorMaterial> RILYNIUM = registerArmorMaterial("rilynium",
+            () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                map.put(ArmorItem.Type.BOOTS, 4);
+                map.put(ArmorItem.Type.LEGGINGS, 7);
+                map.put(ArmorItem.Type.CHESTPLATE, 9);
+                map.put(ArmorItem.Type.HELMET, 4);
+                map.put(ArmorItem.Type.BODY, 12);
+            }), 25, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, () -> Ingredient.ofItems(ModItems.RILYNIUM_GEM),
+                    List.of(new ArmorMaterial.Layer(Identifier.of(Bettercarrotsreplanted.MOD_ID, "rilynium"))), 3f,0.2f));
 
-    private final String name;
-    private final int durabilityMultiplier;
-    private final int[] protectionAmounts;
-    private final int enchantability;
-    private final SoundEvent equipSound;
-    private final float toughness;
-    private final float knockbackResistance;
-    private final Supplier<Ingredient> repairIngredient;
+    public static final RegistryEntry<ArmorMaterial> FIRE_RILYNIUM = registerArmorMaterial("fire_rilynium",
+            () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                map.put(ArmorItem.Type.BOOTS, 8);
+                map.put(ArmorItem.Type.LEGGINGS, 14);
+                map.put(ArmorItem.Type.CHESTPLATE, 18);
+                map.put(ArmorItem.Type.HELMET, 8);
+                map.put(ArmorItem.Type.BODY, 20);
+            }), 25, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, () -> Ingredient.ofItems(ModItems.RILYNIUM_GEM),
+                    List.of(new ArmorMaterial.Layer(Identifier.of(Bettercarrotsreplanted.MOD_ID, "fire_rilynium"))), 3f,0.2f));
 
-    private static final int[] BASE_DURABILITY = {11, 16, 15, 13};
+    public static final RegistryEntry<ArmorMaterial> WATER_RILYNIUM = registerArmorMaterial("water_rilynium",
+            () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                map.put(ArmorItem.Type.BOOTS, 8);
+                map.put(ArmorItem.Type.LEGGINGS, 14);
+                map.put(ArmorItem.Type.CHESTPLATE, 18);
+                map.put(ArmorItem.Type.HELMET, 8);
+                map.put(ArmorItem.Type.BODY, 20);
+            }), 25, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, () -> Ingredient.ofItems(ModItems.RILYNIUM_GEM),
+                    List.of(new ArmorMaterial.Layer(Identifier.of(Bettercarrotsreplanted.MOD_ID, "water_rilynium"))), 3f,0.2f));
 
-    ModArmorMaterials(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantability, SoundEvent equipSound, float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
-        this.name = name;
-        this.durabilityMultiplier = durabilityMultiplier;
-        this.protectionAmounts = protectionAmounts;
-        this.enchantability = enchantability;
-        this.equipSound = equipSound;
-        this.toughness = toughness;
-        this.knockbackResistance = knockbackResistance;
-        this.repairIngredient = repairIngredient;
-    }
+    public static final RegistryEntry<ArmorMaterial> WIND_RILYNIUM = registerArmorMaterial("wind_rilynium",
+            () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                map.put(ArmorItem.Type.BOOTS, 8);
+                map.put(ArmorItem.Type.LEGGINGS, 14);
+                map.put(ArmorItem.Type.CHESTPLATE, 18);
+                map.put(ArmorItem.Type.HELMET, 8);
+                map.put(ArmorItem.Type.BODY, 20);
+            }), 25, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, () -> Ingredient.ofItems(ModItems.RILYNIUM_GEM),
+                    List.of(new ArmorMaterial.Layer(Identifier.of(Bettercarrotsreplanted.MOD_ID, "wind_rilynium"))), 3f,0.2f));
 
-    @Override
-    public int getDurability(ArmorItem.Type type) {
-        return BASE_DURABILITY[type.ordinal()] * this.durabilityMultiplier;
-    }
+    public static final RegistryEntry<ArmorMaterial> ELECTRIC_RILYNIUM = registerArmorMaterial("electric_rilynium",
+            () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                map.put(ArmorItem.Type.BOOTS, 8);
+                map.put(ArmorItem.Type.LEGGINGS, 14);
+                map.put(ArmorItem.Type.CHESTPLATE, 18);
+                map.put(ArmorItem.Type.HELMET, 8);
+                map.put(ArmorItem.Type.BODY, 20);
+            }), 25, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, () -> Ingredient.ofItems(ModItems.RILYNIUM_GEM),
+                    List.of(new ArmorMaterial.Layer(Identifier.of(Bettercarrotsreplanted.MOD_ID, "electric_rilynium"))), 3f,0.2f));
 
-    @Override
-    public int getProtection(ArmorItem.Type type) {
-        return protectionAmounts[type.ordinal()];
-    }
+    public static final RegistryEntry<ArmorMaterial> EMERALD = registerArmorMaterial("emerald",
+            () -> new ArmorMaterial(Util.make(new EnumMap(ArmorItem.Type.class), map -> {
+                map.put(ArmorItem.Type.BOOTS, 3);
+                map.put(ArmorItem.Type.LEGGINGS, 6);
+                map.put(ArmorItem.Type.CHESTPLATE, 8);
+                map.put(ArmorItem.Type.HELMET, 3);
+                map.put(ArmorItem.Type.BODY, 11);
+            }), 20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, () -> Ingredient.ofItems(Items.EMERALD),
+                    List.of(new ArmorMaterial.Layer(Identifier.of(Bettercarrotsreplanted.MOD_ID, "emerald"))), 2.75f,0.05f));
 
-    @Override
-    public int getEnchantability() {
-        return this.enchantability;
-    }
-
-    @Override
-    public SoundEvent getEquipSound() {
-        return this.equipSound;
-    }
-
-    @Override
-    public Ingredient getRepairIngredient() {
-        return this.repairIngredient.get();
-    }
-
-    @Override
-    public String getName() {
-        return Bettercarrotsreplanted.MOD_ID+":"+this.name;
-    }
-
-    @Override
-    public float getToughness() {
-        return this.toughness;
-    }
-
-    @Override
-    public float getKnockbackResistance() {
-        return this.knockbackResistance;
+    public static RegistryEntry<ArmorMaterial> registerArmorMaterial(String name, Supplier<ArmorMaterial> material) {
+        return Registry.registerReference(Registries.ARMOR_MATERIAL, Identifier.of(Bettercarrotsreplanted.MOD_ID, name), material.get());
     }
 }

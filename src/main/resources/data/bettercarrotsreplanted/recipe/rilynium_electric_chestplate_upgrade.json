@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "bettercarrotsreplanted:rilynium_chestplate"
+  },
+  "addition": {
+    "item": "minecraft:lightning_rod"
+  },
+  "template": {
+    "item": "bettercarrotsreplanted:blank_smithing_template"
+  },
+  "result": {
+    "id": "bettercarrotsreplanted:rilynium_electric_chestplate"
+  }
+}

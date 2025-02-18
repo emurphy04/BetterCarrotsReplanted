@@ -10,7 +10,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
-    public static final ItemGroup BETTERCARROTSGROUP = Registry.register(Registries.ITEM_GROUP, new Identifier(Bettercarrotsreplanted.MOD_ID, "bettercarrotsgroup"), FabricItemGroup.builder().displayName(Text.translatable("itemgroup.bettercarrotsreplanted")).icon(() -> new ItemStack(ModItems.RILYNIUM_CARROT)).entries((displayContext, entries) -> {
+    public static final ItemGroup BETTERCARROTSGROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(Bettercarrotsreplanted.MOD_ID, "bettercarrotsgroup"), FabricItemGroup.builder().displayName(Text.translatable("itemgroup.bettercarrotsreplanted")).icon(() -> new ItemStack(ModItems.RILYNIUM_CARROT)).entries((displayContext, entries) -> {
 
         //Diamond
         entries.add(ModItems.DIAMOND_CARROT);

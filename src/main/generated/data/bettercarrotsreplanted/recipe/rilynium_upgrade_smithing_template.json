@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "bettercarrotsreplanted:rilynium_gem"
+    },
+    "Y": {
+      "item": "bettercarrotsreplanted:rilynium_upgrade_smithing_template"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "XYX",
+    "XXX"
+  ],
+  "result": {
+    "count": 2,
+    "id": "bettercarrotsreplanted:rilynium_upgrade_smithing_template"
+  }
+}

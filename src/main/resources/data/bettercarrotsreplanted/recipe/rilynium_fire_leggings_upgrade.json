@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "bettercarrotsreplanted:rilynium_leggings"
+  },
+  "addition": {
+    "item": "minecraft:blaze_rod"
+  },
+  "template": {
+    "item": "bettercarrotsreplanted:blank_smithing_template"
+  },
+  "result": {
+    "id": "bettercarrotsreplanted:rilynium_fire_leggings"
+  }
+}
