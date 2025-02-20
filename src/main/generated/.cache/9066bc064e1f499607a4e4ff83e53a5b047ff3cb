@@ -1,4 +1,4 @@
-// 1.21.1	2025-02-18T18:43:09.1422943	Better Carrots: Replanted/Recipes
+// 1.21.1	2025-02-20T18:36:21.3203919	Better Carrots: Replanted/Recipes
 b7e16164fb78e7426deac374f1936e6b80cc0a6f data\bettercarrotsreplanted\advancement\recipes\misc\rilynium_gem.json
 aabdc9b9523987d7c467550a54310d2ca9dcadc3 data\bettercarrotsreplanted\recipe\diamond_nugget.json
 d20ac7a7d96e93e52e1da6d63c3aed1ab4330496 data\bettercarrotsreplanted\advancement\recipes\misc\emerald_nugget.json
@@ -17,7 +17,7 @@ d56b83a9370db1cf0eb2aa09649bef40856841ed data\bettercarrotsreplanted\recipe\reds
 bd675563d5ccabf4b46cc9b4a58465876dc16ae5 data\bettercarrotsreplanted\advancement\recipes\misc\lapis_from_lapis_nugget.json
 b3549007bcbd334be3d70e9683805b10525f1677 data\bettercarrotsreplanted\recipe\lapis_nugget.json
 f1b0f56ef34bbb616db561c7a72dd7a6beec6a5d data\bettercarrotsreplanted\recipe\rilynium_upgrade_smithing_template_from_blank.json
-7231275d57836e799b9fb1495668acb827ba5caa data\bettercarrotsreplanted\recipe\emerald_boots.json
+c40e408fa222825442896fac91cfb6c338a3910f data\bettercarrotsreplanted\recipe\emerald_boots.json
 ef0c83004bd5644c6c4e34ee637c07151cde7e8c data\bettercarrotsreplanted\recipe\rilynium_carrot.json
 9b084dba182debd4f6a2da1f4de31fc1f0ef81ea data\bettercarrotsreplanted\recipe\netherite_from_netherite_nugget.json
 bf995daf411b5abfac9252d32649372eac486a23 data\bettercarrotsreplanted\advancement\recipes\misc\emerald_from_emerald_nugget.json

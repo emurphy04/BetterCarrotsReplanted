@@ -1,0 +1,34 @@
+{
+  "replace": false,
+  "values": [
+    "bettercarrotsreplanted:emerald_helmet",
+    "bettercarrotsreplanted:emerald_chestplate",
+    "bettercarrotsreplanted:emerald_leggings",
+    "bettercarrotsreplanted:emerald_boots",
+
+    "bettercarrotsreplanted:rilynium_helmet",
+    "bettercarrotsreplanted:rilynium_chestplate",
+    "bettercarrotsreplanted:rilynium_leggings",
+    "bettercarrotsreplanted:rilynium_boots",
+
+    "bettercarrotsreplanted:rilynium_fire_helmet",
+    "bettercarrotsreplanted:rilynium_fire_chestplate",
+    "bettercarrotsreplanted:rilynium_fire_leggings",
+    "bettercarrotsreplanted:rilynium_fire_boots",
+
+    "bettercarrotsreplanted:rilynium_water_helmet",
+    "bettercarrotsreplanted:rilynium_water_chestplate",
+    "bettercarrotsreplanted:rilynium_water_leggings",
+    "bettercarrotsreplanted:rilynium_water_boots",
+
+    "bettercarrotsreplanted:rilynium_electric_helmet",
+    "bettercarrotsreplanted:rilynium_electric_chestplate",
+    "bettercarrotsreplanted:rilynium_electric_leggings",
+    "bettercarrotsreplanted:rilynium_electric_boots",
+
+    "bettercarrotsreplanted:rilynium_wind_helmet",
+    "bettercarrotsreplanted:rilynium_wind_chestplate",
+    "bettercarrotsreplanted:rilynium_wind_leggings",
+    "bettercarrotsreplanted:rilynium_wind_boots"
+  ]
+}

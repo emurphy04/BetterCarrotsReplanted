@@ -2,9 +2,11 @@ package com.bettercarrots.item;
 
 import com.bettercarrots.Bettercarrotsreplanted;
 import com.bettercarrots.item.custom.*;
+import net.fabricmc.fabric.api.item.v1.EquipmentSlotProvider;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.impl.itemgroup.FabricItemGroupBuilderImpl;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.Registries;
