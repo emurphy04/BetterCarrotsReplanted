@@ -119,10 +119,10 @@ public class ModItems {
     //emerald
     public static final Item EMERALD_CARROT = registerItem("emerald_carrot", new Item(new Item.Settings().food(ModFoodComponents.EMERALD_CARROT)));
     public static final Item EMERALD_NUGGET = registerItem("emerald_nugget", new Item(new Item.Settings()));
-    public static final Item EMERALD_HELMET = registerItem("emerald_helmet", new ArmorItem(ModArmorMaterials.EMERALD, ArmorItem.Type.HELMET,new Item.Settings().maxCount(1)));
-    public static final Item EMERALD_CHESTPLATE = registerItem("emerald_chestplate", new ArmorItem(ModArmorMaterials.EMERALD, ArmorItem.Type.CHESTPLATE,new Item.Settings().maxCount(1)));
-    public static final Item EMERALD_LEGGINGS = registerItem("emerald_leggings", new ArmorItem(ModArmorMaterials.EMERALD, ArmorItem.Type.LEGGINGS,new Item.Settings().maxCount(1)));
-    public static final Item EMERALD_BOOTS = registerItem("emerald_boots", new ArmorItem(ModArmorMaterials.EMERALD, ArmorItem.Type.BOOTS,new Item.Settings().maxCount(1)));
+    public static final Item EMERALD_HELMET = registerItem("emerald_helmet", new ArmorItem(ModArmorMaterials.EMERALD, ArmorItem.Type.HELMET,new Item.Settings().maxCount(1).maxDamage(405)));
+    public static final Item EMERALD_CHESTPLATE = registerItem("emerald_chestplate", new ArmorItem(ModArmorMaterials.EMERALD, ArmorItem.Type.CHESTPLATE,new Item.Settings().maxCount(1).maxDamage(580)));
+    public static final Item EMERALD_LEGGINGS = registerItem("emerald_leggings", new ArmorItem(ModArmorMaterials.EMERALD, ArmorItem.Type.LEGGINGS,new Item.Settings().maxCount(1).maxDamage(530)));
+    public static final Item EMERALD_BOOTS = registerItem("emerald_boots", new ArmorItem(ModArmorMaterials.EMERALD, ArmorItem.Type.BOOTS,new Item.Settings().maxCount(1).maxDamage(466)));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(Bettercarrotsreplanted.MOD_ID, name), item);

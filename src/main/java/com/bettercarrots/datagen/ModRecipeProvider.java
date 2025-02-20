@@ -203,7 +203,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                     .criterion(hasItem(Items.EMERALD), conditionsFromItem(Items.EMERALD))
                     .offerTo(consumer, Identifier.of(Bettercarrotsreplanted.MOD_ID, "emerald_leggings"));
 
-            ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.EMERALD, 1)
+            ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.EMERALD_BOOTS, 1)
                     .pattern("   ")
                     .pattern("X X")
                     .pattern("X X")
